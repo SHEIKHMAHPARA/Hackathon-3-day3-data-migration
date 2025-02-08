@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image"
 
 const DyShopTwo = () => {
   return (
@@ -6,7 +7,7 @@ const DyShopTwo = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
         {/* Left Column - Image */}
         <div className="flex justify-center">
-          <img 
+          <Image 
             src="/unsplash_QANOF9iJlFs.png" 
             alt="Decor" 
             className="w-full h-auto object-cover rounded-lg shadow-lg"

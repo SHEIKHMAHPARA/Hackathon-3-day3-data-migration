@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { FaStar, FaHeart, FaShoppingCart, FaEye } from "react-icons/fa";
+import Image from "next/image"
 
 const DyShopOne = () => {
   const [selectedColor, setSelectedColor] = useState("blue");
@@ -11,7 +12,7 @@ const DyShopOne = () => {
       {/* Left Section - Image Carousel */}
       <div className="flex flex-col items-center w-full md:w-1/2">
         <div className="relative w-full h-96 bg-gray-100 flex items-center justify-center">
-          <img
+          <Image
             src="/carousel-inner (1).png"
             alt="Product"
             className="object-cover w-full h-full"
@@ -20,8 +21,8 @@ const DyShopOne = () => {
           <button className="absolute right-4 text-gray-500 text-2xl">❯</button>
         </div>
         <div className="flex gap-2 mt-4">
-          <img src="/sofa1.jpeg" alt="thumb" className="w-16 h-16" />
-          <img src="/single-product-1-thumb-2.jpg" alt="thumb" className="w-16 h-16" />
+          <Image src="/sofa1.jpeg" alt="thumb" className="w-16 h-16" />
+          <Image src="/single-product-1-thumb-2.jpg" alt="thumb" className="w-16 h-16" />
         </div>
       </div>
 

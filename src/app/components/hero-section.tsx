@@ -1,4 +1,5 @@
-import { Button } from "../../components/ui/button"
+import { Button } from "../../components/ui/button";
+import Image from "next/image"
 
 export default function ClassicProduct() {
   return (
@@ -26,7 +27,7 @@ export default function ClassicProduct() {
 
           {/* Image */}
           <div className="md:flex-1 w-510px h-685px gap-30px left-209 py-112 md:w-auto">
-            <img
+            <Image
               src="/Boy.png"
               alt="Vita Classic Product"
               className="w-full h-auto max-w-xl mx-auto md:max-w-none"
